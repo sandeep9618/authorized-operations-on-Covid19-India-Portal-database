@@ -1,0 +1,50 @@
+
+GET http://localhost:3000/states/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+###
+
+GET http://localhost:3000/states/8/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+
+###
+POST http://localhost:3000/districts/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+GET http://localhost:3000/districts/322/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+
+###
+DELETE http://localhost:3000/districts/:districtId/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+
+###
+PUT http://localhost:3000/districts/333/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+
+GET http://localhost:3000/states/:stateId/stats/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjczODYyODA4fQ.h6Bq-f1uckfpxnscXDA0UiT8NrtrC0o2rAuvzlzYuLE
+
+
+
